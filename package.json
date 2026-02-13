@@ -1,0 +1,15 @@
+{
+  "name": "order-management",
+  "version": "1.0.0",
+  "description": "Order Management feature for food delivery app",
+  "scripts": {
+    "test": "cd backend && npm test",
+    "test:backend": "cd backend && npm test",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}

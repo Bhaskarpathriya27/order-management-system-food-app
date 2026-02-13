@@ -1,0 +1,110 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.details {
+  flex: 1;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3436;
+  margin-bottom: 0.25rem;
+}
+
+.price {
+  font-size: 0.875rem;
+  color: #636e72;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #dfe6e9;
+  border-radius: 6px;
+  padding: 0.25rem;
+}
+
+.quantityBtn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #f8f9fa;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3436;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.quantityBtn:hover:not(:disabled) {
+  background: #e9ecef;
+}
+
+.quantityBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantityValue {
+  min-width: 32px;
+  text-align: center;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.total {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ff6b6b;
+  min-width: 80px;
+  text-align: right;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.removeBtn:hover {
+  background: #ffebee;
+}
+
+@media (max-width: 640px) {
+  .item {
+    flex-wrap: wrap;
+  }
+  
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+}
